@@ -18,6 +18,14 @@ A sandbox for testing fluentd settings.
 echo '{ "foo": "bar" }' | ./fluent-cat debug.log
 ```
 
+### tail
+
+`./log` is mounted on `/var/log` in the container.
+
+```sh
+cat sample.log > log/sample.log
+```
+
 ### settings
 
 Fix `tag` in `fluentd` file.

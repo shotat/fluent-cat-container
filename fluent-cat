@@ -1,1 +1,2 @@
+#!/bin/sh
 docker exec -i fluentd fluent-cat "$@"
