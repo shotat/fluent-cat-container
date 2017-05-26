@@ -1,4 +1,4 @@
 #!/bin/sh
 tag=${tag:-"v0.12.36"}
 
-docker run -it --rm -v "$(pwd)/log:/var/log:ro" -v "$(pwd)/fluent:/etc/fluent:ro" --name=fluentd "fluent/fluentd:${tag}" fluentd
+docker run -it --rm -v "$(pwd)/log:/var/log:ro" -v "$(pwd)/fluent:/etc/fluent" --name=fluentd "fluent/fluentd:${tag}" fluentd "$@"
